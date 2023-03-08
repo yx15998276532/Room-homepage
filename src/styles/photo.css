@@ -156,6 +156,96 @@
         }
 }
 
+@media screen and (max-width: 420px) {
+
+    .photo-active {
+        height: 450px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .photo-active-right {
+        width: 97%;
+        padding-left: 0px;
+        text-align: center;
+        margin-top: 0px;
+        margin: auto;
+    }
+
+    .photo-active-right h1 {
+        font-size: 2rem;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .photo-active-right p {
+        width: 90%;
+        font-size: 1rem;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .photo-active-right .shop {
+        font-weight: 900;
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: hsl(0, 0%, 0%)
+    }
+
+    .photo-active-right .shop svg path {
+        fill: hsl(0, 0%, 0%)
+    }
+
+    .photo-active img {
+        display: block;
+        object-fit: cover;
+        -o-object-fit: cover;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        transition: .4s all ease-in-out;
+        position: relative;
+    }
+
+    .photo-footer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 129px;
+    }
+
+    .photo-middle>img {
+        width: 100%;
+        object-fit: cover;
+        -o-object-fit: cover;
+        height: 380px;
+    }
+
+    .photo-footer-middle {
+        width: 100%;
+        padding-left: 0px;
+        margin: auto;
+    }
+
+    .photo-footer-middle p {
+        width: 88%;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .photo-footer-middle h3 {
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin: auto;
+        text-align: center;
+    }
+}
 @media screen and (max-width: 390px) {
     
         .photo-active {

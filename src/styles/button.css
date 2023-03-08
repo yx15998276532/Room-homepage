@@ -43,6 +43,14 @@
         right: 0 !important;
     }
 }
+@media screen and (max-width: 420px) {
+    .button {
+        top: -50px;
+        height: 50px;
+        left: 69%;
+        right: 0 !important;
+    }
+}
 @media screen and (max-width: 390px) {
     .button{
         top: -50px;
