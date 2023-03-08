@@ -1,0 +1,53 @@
+.button{
+    position: absolute;
+    z-index: 1;
+    width: 31%;
+    height:100px;
+    bottom: 0;
+    left:0;
+}
+.btnLeft{
+    width:50%;
+    height:100%;
+    border:none;
+    background-color: hsl(0, 0%, 0%);
+}
+.btnRight {
+    width: 50%;
+    height: 100%;
+    border: none;
+    background-color: hsl(0, 0%, 0%);
+}
+.btnLeft:hover,
+.btnRight:hover{
+    cursor: pointer;
+    background-color: hsl(0, 0%, 63%);
+    transition: all .4s ease-in-out;
+}
+.btnRight:hover>svg>path{
+    stroke: hsl(0, 0%, 0%);
+}
+.btnLeft:hover>svg>path{
+    stroke: hsl(0, 0%, 0%);
+}
+
+@media screen and (max-width: 1440px) {
+   .button{
+    width: 25%;
+   } 
+}
+@media screen and (max-width: 914px){
+    .button{
+        top:-100px;
+        left: 58%;
+        right: 0 !important;
+    }
+}
+@media screen and (max-width: 390px) {
+    .button{
+        top: -50px;
+        height: 50px;
+        left: 66%;
+        right: 0 !important;
+    }
+}

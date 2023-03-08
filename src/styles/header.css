@@ -1,0 +1,134 @@
+
+.header{
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    z-index: 3;
+}
+.header-room{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.hamburger{
+    visibility: hidden;
+}
+.room{
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 8px;
+    padding-top: 15px;
+}
+
+.header a{
+    margin:0 20px;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+.header .close{
+    visibility: hidden;
+}
+.active-line{
+    margin-top: 5px;
+    list-style: none;
+    position: relative;
+    border-bottom: 2px solid transparent;
+    width:3px;
+    top: 5px;
+    margin: auto;
+    transition: width .4s;
+} 
+a:hover>.active-line {
+    width: 25px;
+    border-bottom-color: hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 390px) {
+    .header{
+        width: 100%;
+        height: 0;
+        margin-left: 0;
+    }
+    .room{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-top: 15px;
+    }
+        .header-room {
+            width: 100%;
+            margin-right: 0px;
+            position: absolute;
+        }
+        .header-hamburger {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index: 3;
+        }
+        .hamburger {
+            visibility: visible;
+            width: 35px;
+            margin-left: 30px;
+            margin-right: 0;
+
+        }
+        .room {
+            width: 100%;
+            padding-top: 0;
+            text-align: center;
+            margin-left: -50px;
+        }
+        .header-list{
+            background-color: hsl(0, 0%, 100%);
+            width: 100%;
+            height: 100px;
+            display: flex;   
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 1rem;
+            position: relative;
+            transition: all .4s ease-in-out;
+            transform: translateY(-100%); 
+            z-index: 3;  
+            position: relative;
+        }
+        .header-active{
+            transform: translateY(0);
+        }
+         .header a {
+             margin: 0 20px;
+             color: hwb(0 0% 100%);
+             font-size: 0.9rem;
+             text-decoration: none;
+             padding-bottom: 5px;
+             display: inline-block;
+            font-weight: 700;
+         }
+         .header-close{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 4;
+         }
+          .header .close{
+            z-index: 1;
+            height: 21px;
+            position: absolute;
+            visibility: visible;
+         }
+        
+        }
