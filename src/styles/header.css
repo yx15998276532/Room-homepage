@@ -108,7 +108,7 @@ a:hover>.active-line {
         }
          .header a {
              margin: 0 20px;
-             color: hwb(0 0% 100%);
+            color: black;
              font-size: 0.9rem;
              text-decoration: none;
              padding-bottom: 5px;
